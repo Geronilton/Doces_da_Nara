@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-area:
+        'header'
+        'main'
+        'footer';
+    grid-template-rows: 10% auto 15%;
+    grid-template-columns: auto;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E66E94;
+}
+
+.redesSocias>ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+
+    li {
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 35px;
+        margin-right: 5px;
+    }
+
+    a{
+        display: flex;
+        align-items: center;
+    }
+}
+
+header>.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.imgLogo {
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.imgLogo>h1 {
+    color: white;
+    font-family: URW Chancery L, cursive;
+    margin-top: 3%;
+}
+
+main {
+    width: 70%;
+    margin-left: 20%;
+}
+
+.apresentacion {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    height: 230px;
+    margin-bottom: 5%;
+}
+
+.apresentacion>img {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+}
+
+
+.apresentacion>.textoApresentacion {
+    text-align: justify;
+    width: 400px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.vitrine {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+h2 {
+
+    font-family: URW Chancery L, cursive;
+}
+
+.cards {
+    background-color: #eb95b0;
+    height: 300px;
+    width: 300px;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 5%;
+    justify-content: center;
+
+    h3{
+        font-size:18px ;
+    }
+
+    img {
+        border-radius: 10px;
+        width:200px ;
+        height:200px;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cards>.linkEncomenda {
+    background-color: green;
+    padding: 3%;
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-top: 8px;
+}
+
+
+footer {
+    margin-top: 5%;
+    background-color: #E66E94;
+    height: 100px;
+    width: 102%;
+}
